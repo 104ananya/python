@@ -18,3 +18,14 @@ print(age)
 weight_lbs = input("Weight (lbs): ")
 weight_kg = int(weight_lbs) * 0.45
 print(weight_kg)
+
+# Weight Calculator
+weight = int(input('Weight: '))
+unit = input('Its in (L)bs or (K)g ? ')
+
+if unit.upper() == 'L':
+    convert = weight * 0.45
+    print(f'Your converted weight is {convert} kilos')
+else:
+    convert = weight/0.45
+    print(f'Your converted weight is {convert} pounds')
